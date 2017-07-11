@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+  <% include ../partials/nav.ejs %>
+    <div id="main">
+      <div class="hero-image">
+        <img src="/images/hero2.jpg" />
+        <div class="hero-text">
+          <h1 id = "title">Changing Tides</h1>
+          <button class = "btn btn-trans" href="/donate">Donate</button>
+        </div>
+      </div>
+      <div class = "content-block text-center">
+        <h1 class = "text-primary">About the Program</h1>
+        <h3 class = "text-center">
+          <p>
+          Changing Tides Orphanage in Jacmel, Haiti was founded by Vance and Cheryl Simms following the devastating earthquake in January of 2010. Vance and Cheryl has been on several service trips in Haiti, and had talked about one day creating an orphanage there after retiring. When the earthquake hit and they saw the widespread destruction , they decided to move their plans up and try to found an orphanage to help those children who had been left parentless. From this sprung what is today Changing Tides Orphanage. Vance rallied his friends and colleagues in Ojai, California to help him raise money to get started, and the rest is history. Today we own our own land and Vance and friends built a large, simple-but-sturdy home for our 15 children. It has been seven years since we opened the orphanage and the children are thriving: they are all healthy, well fed, loved, and they all go to school. In addition, they are learning English so that they will have a marketable skill when they reach age 18.Benite Jeune, our Haitian friend who runs a very large school and orphanage in Port-au-Prince manages the day to day operations of Changing Tides, and we have a wonderful husband and wife who live with the children and see to their needs
+          </p>
+        </h3>
+      </div>
+      <div class="content-block text-center row">
+        <h1 class = "text-primary">Why Haiti?</h1>
+        <div class="info col-lg-6">
+          <div class="center">
+            <div class="same-height panel panel-danger">
+              <div class="panel-heading">
+                <h3 class="panel-title">Poverty</h3>
+              </div>
+              <div class="panel-body">
+                <li>Gross national income per capita is $660.</li>
+                <li>78% of Haitians are poor, living with less than $2 a day.</li>
+                <li>54% of Haitians live in extreme poverty, with less than $1 a day.</li>
+                <li>In rural areas, poverty and extreme poverty rates are about 84% and 69%.</li>
+                <li>Over 66% of the labor force do not have formal jobs.</li>
+                <li>Life expectancy is 61 years.</li>
+                <li>50% of children under 5 are malnourished.</li>
+                <li>80 out of every 1,000 Haitian children never see their first birthday.</li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info col-lg-6">
+          <div class="center">
+            <div class="same-height panel panel-warning">
+              <div class="panel-heading">
+                <h3 class="panel-title">Education</h3>
+              </div>
+              <div class="panel-body">
+                <li>50% of primary school age children are not enrolled in school.</li>
+                <li>33% of girls over the age of six never go to school.</li>
+                <li>Approximately 30% of children attending primary school will not make it to the third grade; 60% will abandon school before the sixth grade.</li>
+                <li>Less than 40% of non-public schools are accredited.</li>
+                <li>Only 15% of primary teachers have basic teaching qualifications.</li>
+                <li>Approximately 75% of all teachers lack adequate training</li>
+                <li>Less than 20% of schools have electricity; 39% have potable water.</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "text-center content-block">
+        <h1 class = "text-primary">The Orphanage</h1>
+        <button class = "video btn btn-info">Watch the Video!</button>
+        <h3 class = "text-center">
+          <p>We are a group of friends, families and individuals that share a common desire.  This desire arises from within our hearts, which strives to give back and help others around the world that are in need.</p>
+          <p>In 2009 we ventured to Haiti on a family mission trip.  This trip opened our eyes to the deprivation and lack of available resources in this country.  We returned to Haiti after the devastating earthquake in 2010, which left many individuals homeless and helpless.  We decided to take a stand and make a change.  Our hearts felt heavy and our passion grew for these people who could not make a change on their own.  Through this passion and desire to make a difference for the less fortunate, Changing Tides Orphanage took shape.</p>
+          <p>In July 2011, Changing Tides Orphanage and Academy opened its doors to Haitian children in Jacmel.  Under the administration of Pastor Diligent and his wife, Margret, we can now provide a loving environment that includes clean clothes, three nutritious meals a day, and the opportunity for an education.  They could not otherwise receive.  Our vision and hope is that our children will become educated to make a change in the future generations of their country.  These children are growing up in a country whose government only provides education to ten percent of the population.</p>
+          <p>Changing Tides is growing and with support and prayer we will continue to leave an everlasting impact on the children and future generations to come.</p>
+        </h3>
+      </div>
+      <div id = "videoModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <video id = "vid" width="100%" controls>
+            <source src="/videos/infoVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% include ../partials/footer.ejs %>
+</body>
+
+</html>
