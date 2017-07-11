@@ -13,8 +13,9 @@ $(".video").click(function(){
 });
 
 $('#videoModal').on('hidden.bs.modal', function (e) {
-  $("#vid").get(0).pause();
-})
+  var leg=$("#vid-iframe").attr("src");
+  $("#vid-iframe").attr("src", leg)
+});
 
 /*$(document).scroll(function(){
     if($(document).scrollTop()>10){
