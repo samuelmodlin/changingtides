@@ -16,11 +16,3 @@ $('#videoModal').on('hidden.bs.modal', function (e) {
   var leg=$("#vid-iframe").attr("src");
   $("#vid-iframe").attr("src", leg)
 });
-
-/*$(document).scroll(function(){
-    if($(document).scrollTop()>10){
-      $(".navbar").css('backgroundColor', 'rgba(0, 0, 0, 0.5)')
-    } else {
-      $(".navbar").css('backgroundColor', 'rgba(0, 0, 0, 0)')
-    }
-});*/
