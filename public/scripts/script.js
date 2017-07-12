@@ -11,7 +11,6 @@ function closeNav() {
 $(".video").click(function(){
   $("#videoModal").modal('show');
 });
-
 $('#videoModal').on('hidden.bs.modal', function (e) {
   var leg=$("#vid-iframe").attr("src");
   $("#vid-iframe").attr("src", leg)
