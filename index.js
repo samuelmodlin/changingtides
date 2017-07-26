@@ -55,7 +55,7 @@ app.post('/contact/submit', function(req, res) {
       if (error) {
           return console.log(error);
       }
-      console.log('Message %s sent: %s', info.messageId, info.response);
+      console.log('The Message %s sent: %s', info.messageId, info.response);
   });
 });
 
