@@ -49,12 +49,7 @@ app.post('/contact/submit', function(req, res) {
       to: 'modlin.sam@gmail.com',
       subject: 'Auto Generated Form ' + Math.floor((Math.random() * 100000000000000) + 1),
       text: 'HTML Not supported... please email samuel_modlin@branson.org',
-      html: '<img src = "cid:logo@changingtidesorphanage.com" /><h1 style = "color: red">Changing Tides Orphanage Contact Form Submittion:</h1><br><h2 style = "border-bottom: 2px dotted black; border-top: 2px dotted black">Name: ' + name + '</h2><h2 style = "border-bottom: 2px dotted black; border-top: 2px dotted black">Email: ' + email + '</h2><h2 style = "border-bottom: 2px dotted black; border-top: 2px dotted black">Reason: ' + reason + '</h2><div><h2>Message: ' + message + '</h2></div>',
-      attachments: [{
-          filename: 'logo.png',
-          path: __dirname + '/public' + '/images/logo.png',
-          cid: 'logo@changingtidesorphanage.com'
-      }]
+      html: '<h1 style = "color: red">Changing Tides Orphanage Contact Form Submittion:</h1><br><h2 style = "border-bottom: 2px dotted black; border-top: 2px dotted black">Name: ' + name + '</h2><h2 style = "border-bottom: 2px dotted black; border-top: 2px dotted black">Email: ' + email + '</h2><h2 style = "border-bottom: 2px dotted black; border-top: 2px dotted black">Reason: ' + reason + '</h2><div><h2>Message: ' + message + '</h2></div>',
   };
   transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
