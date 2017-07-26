@@ -1,21 +1,20 @@
 var express = require('express');
   app = express(),
-  path = require("path");
-
-var send = require('gmail-send')({
-  //var send = require('../index.js')({
-  user: 'changingtideshaiti@gmail.com',
-  pass: 'orphanage11',
-  to:   'modlin.sam@gmail.com',
-  subject: 'test subject',
-  text:    'HTML Not supported... contact samuel_modlin@branson.org',         // Plain text
-  html:    '<b>html text</b>'            // HTML
-});
+  path = require("path"),
+  bodyParser = require('body-parser'),
+  send = require('gmail-send')({
+    user: 'changingtideshaiti@gmail.com',
+    pass: 'orphanage11',
+    to:   'benjamin_modlin@branson.org',
+    subject: 'test subject',
+    text:    'HTML Not supported... contact samuel_modlin@branson.org',         // Plain text
+    html:    '<b>html text</b>'
+  });
 
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
-//app.use(bodyParser.json());
+app.use(bodyParser.json());
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');
