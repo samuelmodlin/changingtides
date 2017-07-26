@@ -15,3 +15,18 @@ $('#videoModal').on('hidden.bs.modal', function (e) {
   var leg=$("#vid-iframe").attr("src");
   $("#vid-iframe").attr("src", leg)
 });
+$("#submit").click(function(){
+  $.ajax({
+    url: '/contact/submit',
+    type: 'POST',
+    contentType: 'application/json',
+    data: JSON.stringify(
+      {
+        name: $("#inputName").val(),
+        email: $("#inputEmail").val(),
+        message: $("#textArea").val(),
+        reason: $("#select").val()
+      }
+    )
+  });
+});
