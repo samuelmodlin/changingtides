@@ -16,16 +16,25 @@ $('#videoModal').on('hidden.bs.modal', function (e) {
   $("#vid-iframe").attr("src", leg)
 });
 $("#submit").click(function(){
+  var name = $("#inputName").val();
+  var email = $("#inputEmail").val();
+  var text = $("#textArea").val();
+  var reason = $("#select").val();
+  $("#inputName").val('');
+  $("#inputEmail").val('');
+  $("#textArea").val('');
+  $("#select").val('');
+  $("#success-alert").css('display', 'block');
   $.ajax({
     url: '/contact/submit',
     type: 'POST',
     contentType: 'application/json',
     data: JSON.stringify(
       {
-        name: $("#inputName").val(),
-        email: $("#inputEmail").val(),
-        message: $("#textArea").val(),
-        reason: $("#select").val()
+        name: name,
+        email: email,
+        message: text,
+        reason: reason,
       }
     )
   });

@@ -109,6 +109,7 @@ h1 {
     font-size: 17px;
     margin: 0px auto 0px auto;
     text-align: center;
+    text-shadow: 1px 0 0 white, 0 -1px 0 white, 0 1px 0 white, -1px 0 0 white;
 }
 .navbar .nav-left a {
     float: left;
