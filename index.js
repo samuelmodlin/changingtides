@@ -3,6 +3,7 @@ var app = express();
 var path = require("path");
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
+var sslRedirect = require('heroku-ssl-redirect');
 
 let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -22,6 +23,7 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
+app.use(sslRedirect());
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');
