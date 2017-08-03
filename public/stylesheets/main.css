@@ -18,6 +18,9 @@ h1 {
 .text-center {
   font-size: 18px;
 }
+.paypal-form {
+  text-align: center;
+}
 .center {
   margin: 10px auto;
   max-width: 620px;
@@ -45,10 +48,14 @@ h1 {
     background-color: rgba(0, 0, 0, 0);
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
+.btn-trans:hover {
+  color: white;
+}
 .hero-image {
-  background-image: url('/images/group.JPG');
+  background-image: url('/images/group.jpg');
   width: 100%;
-  background-position: center;
+  height: 100%;
+  background-position: 0% 15%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
