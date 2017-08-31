@@ -12,72 +12,74 @@
         position: relative;
       }
     </style>
-    <div id="main">
-      <h1 class="text-primary">Where does the money go?</h1>
-      <div class="where">
-        <h3 class="text-primary">Over 95% of all donations go directly to the cause.</h3>
-        <h3 class="text-danger">Changing Tides is a volunteer organization. Volunteers even pay their own travel expenses.</h3>
-        <h3 class="text-warning">Our Haitian staff works very long hours for modest wages.</h3>
+    <div class = "content">
+      <div id="main" class = "container">
+        <h1 class="text-primary">Where does the money go?</h1>
+        <div class="where">
+          <h3 class="text-primary">Over 95% of all donations go directly to the cause.</h3>
+          <h3 class="text-danger">Changing Tides is a volunteer organization. Volunteers even pay their own travel expenses.</h3>
+          <h3 class="text-warning">Our Haitian staff works very long hours for modest wages.</h3>
+        </div>
+        <div class="mothly">
+          <h1 class="text-primary">Monthly Budget</h1>
+          <table class="table table-striped">
+            <tr>
+              <th>Expense</th>
+              <th>Amount</th>
+            </tr>
+            <tr>
+              <td>Total Salaries</td>
+              <td>$1,200</td>
+            </tr>
+            <tr>
+              <td>Rent</td>
+              <td>$667</td>
+            </tr>
+            <tr>
+              <td>Utilities</td>
+              <td>$300</td>
+            </tr>
+            <tr>
+              <td>Maintenance</td>
+              <td>$150</td>
+            </tr>
+            <tr>
+              <td>Medical</td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td>Transportation</td>
+              <td>$75</td>
+            </tr>
+            <tr>
+              <td>Clothes</td>
+              <td>$75</td>
+            </tr>
+            <tr>
+              <td>Food</td>
+              <td>$1,200</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>$3,866</td>
+            </tr>
+          </table>
+        </div>
+        <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="G39J4Z95MSQ6G">
+          <input class="paypal-btn" type="image" src="https://changingtides.herokuapp.com/images/blue-rect-paypal-60px.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </form>
+        <ul class="address">
+          <li>USA</li>
+          <li>Changing Tides Orphanage and Academy</li>
+          <li>240 Boardman Road</li>
+          <li>Ojai, California 93023</li>
+          <li>&nbsp;</li>
+          <li>Phone: 1-805-207-6817</li>
+          <li>Email: <a href="mailto:changingtideshaiti@gmail.com">changingtideshaiti@gmail.com</a></li>
+        </ul>
       </div>
-      <div class="mothly">
-        <h1 class="text-primary">Monthly Budget</h1>
-        <table class="table table-striped">
-          <tr>
-            <th>Expense</th>
-            <th>Amount</th>
-          </tr>
-          <tr>
-            <td>Total Salaries</td>
-            <td>$1,200</td>
-          </tr>
-          <tr>
-            <td>Rent</td>
-            <td>$667</td>
-          </tr>
-          <tr>
-            <td>Utilities</td>
-            <td>$300</td>
-          </tr>
-          <tr>
-            <td>Maintenance</td>
-            <td>$150</td>
-          </tr>
-          <tr>
-            <td>Medical</td>
-            <td>$200</td>
-          </tr>
-          <tr>
-            <td>Transportation</td>
-            <td>$75</td>
-          </tr>
-          <tr>
-            <td>Clothes</td>
-            <td>$75</td>
-          </tr>
-          <tr>
-            <td>Food</td>
-            <td>$1,200</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>$3,866</td>
-          </tr>
-        </table>
-      </div>
-      <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="G39J4Z95MSQ6G">
-        <input class="paypal-btn" type="image" src="https://changingtides.herokuapp.com/images/blue-rect-paypal-60px.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-      </form>
-      <ul class="address">
-        <li>USA</li>
-        <li>Changing Tides Orphanage and Academy</li>
-        <li>240 Boardman Road</li>
-        <li>Ojai, California 93023</li>
-        <li>&nbsp;</li>
-        <li>Phone: 1-805-207-6817</li>
-        <li>Email: <a href="mailto:changingtideshaiti@gmail.com">changingtideshaiti@gmail.com</a></li>
-      </ul>
     </div>
     <% include ../partials/footer.ejs %>
 </body>

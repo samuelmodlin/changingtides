@@ -57,7 +57,7 @@ app.post('/contact/submit', function(req, res) {
 
   let mailOptions = {
       from: '"Changing Tides" <changingtideshaiti@gmail.com>',
-      to: 'chris_mazzola@branson.org',
+      to: 'modlin.sam@gmail.com',
       subject: 'Auto Generated Form ' + Math.floor((Math.random() * 100000000000000) + 1),
       html: '<h1 style = "color: red">Changing Tides Orphanage Contact Form Submittion:</h1><br><h2 style = "border-bottom: 2px dotted black; border-top: 2px dotted black">Name: ' + name + '</h2><h2 style = "border-bottom: 2px dotted black; border-top: 2px dotted black">Email: ' + email + '</h2><h2 style = "border-bottom: 2px dotted black; border-top: 2px dotted black">Reason: ' + reason + '</h2><div><h2>Message: ' + message + '</h2></div>',
   };

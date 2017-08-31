@@ -9,9 +9,38 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
+.name {
+  margin-top: 10px;
+  font-weight: 500;
+}
+.about {
+  margin-bottom: 25px;
+}
+.profile {
+  border-radius: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.profile-wrap {
+  text-align: center;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.staff {
+  margin-top: 15px;
+}
 #logo {
   width: 300px;
   margin-top: -20px;
+}
+.content {
+  margin: 0;
+  padding: 0;
+  transition: margin-left .5s;
 }
 .text-center {
   text-align: center;
@@ -171,6 +200,7 @@ h1 {
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
+    z-index: 999;
 }
 .sidenav a {
     padding: 8px 8px 8px 32px;

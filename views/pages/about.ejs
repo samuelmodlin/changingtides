@@ -11,26 +11,67 @@
         position: relative;
       }
     </style>
-    <div id = "main">
-      <h1 class = "text-primary">Board</h1>
-      <div class = "bio">
-        <div class = "staffer">
-          <div class = "picture">
+    <%
+      var board = [
+        {
+          src: "/images/bio/tony.jpg",
+          name: "Anthony Franco",
+          desc: "Anthony, known as Tony to most, is a college counselor at St. George's School in Middletown, Rhode Island, but he joined Changing Tides in 2011 while working at The Thacher School. His passion lies in providing access to those that don't often have the opportunity and this has driven his career in education. Tony's most fond memories of trips to the Orphanage include the building of a playground (at the old location), learning Creole with Jan and John, and spending time with his best bud Ken. He's looking forward to another trip in the near future.",
+        },
+        {
+          src: "/images/bio/chris.jpg",
+          name: "Chris Mazzola",
+          desc: 'Christina "Chris" Mazzola has been to Haiti and to the orphanage several times with Vance. She has a lifelong interest in the area, having studied Haiti as part of a post colonial studies program in college. Chris is currently the Head of School at the Branson School in the Bay Area of California. Her children, Madi and JJ, have also been very involved in our efforts at the orphanage.',
+        },
+        {
+          src: "/images/bio/kim.png",
+          name: "Kim Bastian",
+          desc: "Kim has been an educator for 20 years, working in independent schools across the country. In 2014 she traveled to Haiti and had the chance to visit Changing Tides. While there, she spent time getting to know the kids, helping with construction on the new building, and learning about the remarkable Haitian culture and people. Kim lives and works at The Thacher School in Ojai, California, and has an infant daughter.",
+        },
 
-          </div>
-          <div class = "description">
+      ];
+      var staff = [
+        {
+          src: "/images/bio/jeune.jpg",
+          name: "Benite Jeune",
+          desc: "Benite Jeune was born and raised in Haiti. Influenced by his parents, Reverend and Mrs Dante's Jeune, he fulfilled his desire to go to college in Canada and in the USA. While in college, he received the vision to help bring spiritual, social, and economic change to the Haitian people. Currently, Benite is getting a master in project management and operates with his wife Michaelle R.I.S.E Haiti  - a school for 700 children - in Vignier, Haiti. The vision of R.I.S.E Haiti is to train young people to become leaders, to possess hope and take responsibility for bringing positive social, economic, and spiritual change in the country of Haiti. During the 2010 earthquake, Benite survived by jumping in a 13 inch hole in the floor of his school building. Many children and teachers around him died. Since that time, he has dedicated his life to helping Haiti put forth a generation of educated young people who can make their country better.",
+        },
+      ];
+    %>
+    <div class = "content">
+      <div id = "main" class = "container">
+        <h1 class = "text-primary about">Board</h1>
 
-          </div>
+        <div class="staff-section">
+          <% for(var i=0; i<board.length; i++) { %>
+            <div class="staff row">
+              <div class="col-md-3 profile-wrap">
+                <img src="<%= board[i].src %>" alt="profile" class="profile">
+              </div>
+              <div class="col-md-9">
+                <h3 class="name"><%= board[i].name %></h3>
+                <p class="description"><%= board[i].desc %></p>
+              </div>
+            </div>
+          <% } %>
         </div>
-      </div>
-      <h1 class = "text-primary">Staff</h1>
-      <div class = "bio">
-        <div class = "staffer">
 
-        </div>
-        <div class = "description">
+        <h1 class = "text-primary about">Staff</h1>
 
+        <div class="staff-section">
+          <% for(var i=0; i<staff.length; i++) { %>
+            <div class="staff">
+              <div class="col-md-3 profile-wrap">
+                <img src="<%= staff[i].src %>" alt="profile" class="profile">
+              </div>
+              <div class="col-md-9">
+                <h3 class="name"><%= staff[i].name %></h3>
+                <p class="description"><%= staff[i].desc %></p>
+              </div>
+            </div>
+          <% } %>
         </div>
+
       </div>
     </div>
   <% include ../partials/footer.ejs %>
