@@ -7,10 +7,14 @@ body, html {
 }
 h1 {
   font-weight: bold;
+  text-align: center;
 }
 #logo {
   width: 300px;
   margin-top: -20px;
+}
+.text-center {
+  text-align: center;
 }
 .info {
   text-align: center;
@@ -19,8 +23,10 @@ h1 {
   font-size: 18px;
 }
 .paypal-form {
+  width: 100%;
+  padding: 0;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 .center {
   margin: 10px auto;
@@ -185,12 +191,15 @@ h1 {
     margin-left: 50px;
 }
 #main {
-    transition: margin-left .5s;
-    width: 100%;
+    width: 95%;
     height: 100%;
+    margin: 0 auto;
 }
-.contact {
-  padding: 25px;
+.address {
+  margin-left: -35px;
+  list-style: none;
+  text-align: center;
+  color: gray;
 }
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}

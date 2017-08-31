@@ -4,7 +4,13 @@ var path = require("path");
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var sslRedirect = require('heroku-ssl-redirect');
+var paypal = require('paypal-rest-sdk');
 
+paypal.configure({
+  'mode': 'sandbox', //sandbox or live
+  'client_id': 'AWcJTPTDTor0OL8IpQy9mhtvmxFI2pD6p9hZUaWRbvsmYtD5J7U89Xa_0_R41h73_j8-9VXXmy61lMO_',
+  'client_secret': 'EB58eue9wiswxHwlOZqJR56HLty1cZp9IJS-P4FGr2Qb4bXJvJ4-CwpxOAsGOsnWR6ttq4zJstCtPcWJ'
+});
 let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
