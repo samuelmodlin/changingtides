@@ -18,10 +18,10 @@ let transporter = nodemailer.createTransport({
     auth: {
         type: 'OAuth2',
         user: 'changingtideshaiti@gmail.com',
-        clientId: '504109041359-m27ngu5prtsim73h9lfj1ju7rgq0j7u3.apps.googleusercontent.com',
-        clientSecret: 'suzKgknkbTYo7bsU4N5UrCp6',
-        refreshToken: '1/DNy5hlI6tEndi4ZLCS8rz0xdysYGQ9Hk0xw5hWi8EL4',
-        accessToken: 'ya29.GluVBLpcsSs5VY4nAqfTjO4XuQ0CLCbewdTUQlLglnX92XuxyXYtv6OHd9iRo23RAHZekGL5PKxQy7j73m65FoFA5OOto6jiRkHzlbJjJm03Xoz2B6vmxYFB-F5D',
+        clientId: '504109041359-te8b682lu687g6hs9r095e5pp992qqv7.apps.googleusercontent.com',
+        clientSecret: 'nOjinQOEWysb2VNHtQRwKsZs',
+        refreshToken: '1/_W7QXFGvz_60_GkFZG1eeRk5-z1NuIFsq7z8Uv8_LxA2YYIwZ4boXck5xApKvVI-',
+        accessToken: 'ya29.Glu4BKe1YID_Klr5mvtfawRoFw9a-pVWTNyhNjI9WaCI3ZKloeD8CB8en-SreBXZWfd0OVv31WSOD_f0E8C7KNMSlmK_TBa84Cu3_KB2nLpz603qg4BABDpjv1wx',
     }
 });
 
