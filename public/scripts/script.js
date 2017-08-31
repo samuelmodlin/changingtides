@@ -23,6 +23,8 @@ $('#videoModal').on('hidden.bs.modal', function (e) {
   $("#vid-iframe").attr("src", leg)
 });
 $("#submit").click(function(){
+  $("#success-alert").css('display', 'none');
+  $("#danger-alert").css('display', 'none');
   var name = $("#inputName").val();
   var email = $("#inputEmail").val();
   var text = $("#textArea").val();
@@ -46,5 +48,8 @@ $("#submit").click(function(){
         }
       )
     });
+  }
+  else {
+    $("#danger-alert").css('display', 'block');
   }
 });
