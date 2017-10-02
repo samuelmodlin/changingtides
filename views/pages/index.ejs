@@ -6,6 +6,14 @@
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <% include ../partials/nav.ejs %>
       <div class = "content">
         <div class="hero-image">
@@ -17,18 +25,24 @@
           </div>
         </div>
         <div id = "main" class="container">
-          <div class="content-block text-center">
+          <div class="content-block content-center">
             <div class="row">
-              <div class="col-xl-8 text-center">
+              <div class="col-lg-12 content-center">
                 <div class="text-center content-block">
                   <h1 class="text-primary">About The Orphanage</h1>
-                  <h3 class="text-center">
-                  <p> Changing Tides Orphanage was founded In July 2011 by Vance and Cheryl Simms. Vance and Cheryl had visited Haiti several times and thought that one day in the future, they might start an orphanage or school in this impoverished country.  After seeing the devastation caused by the 2010 earthquake, Vance and Cheryl decided that they needed to move their plans forward and reach out to directly help those who were suffering in the aftermath of the earthquake. Changing Tides Orphanage opened its doors to Haitian children in Jacmel, Haiti in early 2011. Since then, we have provided 14 children with a loving environment that includes clean clothes, three nutritious meals a day, loving supervision,  and the opportunity for an education. We have committed ourselves to seeing these children through to adulthood, and our hope is that with the education they are receiving, they will not only be able to provide for themselves, but perhaps can make an impact on the future of Haiti.
-                  </p>
-                </h3>
+                    <p> Changing Tides Orphanage was founded In July 2011 by Vance and Cheryl Simms. Vance and Cheryl had visited Haiti several times and thought that one day in the future, they might start an orphanage or school in this impoverished country.  After seeing the devastation caused by the 2010 earthquake, Vance and Cheryl decided that they needed to move their plans forward and reach out to directly help those who were suffering in the aftermath of the earthquake. Changing Tides Orphanage opened its doors to Haitian children in Jacmel, Haiti in early 2011. Since then, we have provided 14 children with a loving environment that includes clean clothes, three nutritious meals a day, loving supervision,  and the opportunity for an education. We have committed ourselves to seeing these children through to adulthood, and our hope is that with the education they are receiving, they will not only be able to provide for themselves, but perhaps can make an impact on the future of Haiti.
+                    </p>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="content-block">
+              <h1 class="text-primary">Connect With Us</h1>
+              <div class="row text-center">
+                <div class="col-lg-12  text-center">
+                  <div class="fb-page" data-href="https://www.facebook.com/Changing-Tides-Orphanage-169521703120330/" data-tabs="timeline" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Changing-Tides-Orphanage-169521703120330/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Changing-Tides-Orphanage-169521703120330/">Changing Tides Orphanage</a></blockquote></div>
+                </div>
+              </div>
           </div>
           <div class="content-block text-center row">
             <h1 class="text-primary">Why Haiti?</h1>
