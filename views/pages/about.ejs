@@ -14,21 +14,31 @@
     <%
       var board = [
         {
-          src: "/images/bio/tony.jpg",
-          name: "Anthony Franco",
-          desc: "Anthony, known as Tony to most, is a college counselor at St. George's School in Middletown, Rhode Island, but he joined Changing Tides in 2011 while working at The Thacher School. His passion lies in providing access to those that don't often have the opportunity and this has driven his career in education. Tony's most fond memories of trips to the Orphanage include the building of a playground (at the old location), learning Creole with Jan and John, and spending time with his best bud Ken. He's looking forward to another trip in the near future.",
-        },
-        {
           src: "/images/bio/chris.jpg",
           name: "Chris Mazzola",
           desc: 'Christina "Chris" Mazzola has been to Haiti and to the orphanage several times with Vance. She has a lifelong interest in the area, having studied Haiti as part of a post colonial studies program in college. Chris is currently the Head of School at the Branson School in the Bay Area of California. Her children, Madi and JJ, have also been very involved in our efforts at the orphanage.',
+          label: 'Board Chair',
+        },
+        {
+          src: "/images/bio/tony.jpg",
+          name: "Anthony Franco",
+          desc: "Anthony, known as Tony to most, is a college counselor at St. George's School in Middletown, Rhode Island, but he joined Changing Tides in 2011 while working at The Thacher School. His passion lies in providing access to those that don't often have the opportunity and this has driven his career in education. Tony's most fond memories of trips to the Orphanage include the building of a playground (at the old location), learning Creole with Jan and John, and spending time with his best bud Ken. He's looking forward to another trip in the near future.",
         },
         {
           src: "/images/bio/kim.png",
           name: "Kim Bastian",
           desc: "Kim has been an educator for 20 years, working in independent schools across the country. In 2014 she traveled to Haiti and had the chance to visit Changing Tides. While there, she spent time getting to know the kids, helping with construction on the new building, and learning about the remarkable Haitian culture and people. Kim lives and works at The Thacher School in Ojai, California, and has an infant daughter.",
         },
-
+        {
+          src: "/images/bio/lynn.jpeg",
+          name: "Lynn Gardner",
+          desc: 'From the beginning, Lynn joined the effort to help establish the CTOA support organization. She has visited the orphanage and school in Jacmel, Haiti in order to expand her personal involvement. "Vance and Cheryl have inspired me and shown me that when you have a passion and follow it, change can happen." Lynn Gardner joins CTOA with twenty years legal and business experience in Public and Private Corporations.'
+        },
+        {
+          src: "/images/bio/hutton.jpg",
+          name: "Hutton Becker",
+          desc: 'Hutton Becker, a recent graduate from the College of Charleston in South Carolina has been a part of Changing Tides since 2011. She is a stylist at DIANI Boutique in Santa Barbara. Her passion for education and communication renders well with all the kids of Changing Tides. Some of her fondest memories include ice cream outings with the kids and being hand in hand with (not so little anymore) Jonnie.'
+        }
       ];
       var staff = [
         {
@@ -49,7 +59,7 @@
                 <img src="<%= board[i].src %>" alt="profile" class="profile">
               </div>
               <div class="col-md-9">
-                <h3 class="name"><%= board[i].name %></h3>
+                <h3 class="name"><%= board[i].name %> <span class = "label label-info"><%= board[i].label %></span></h3>
                 <p class="description"><%= board[i].desc %></p>
               </div>
             </div>
